@@ -18,6 +18,6 @@ public class HelloWorldServer {
     }
     setPort(port);
 
-    get("/hello", (req, res) -> new Gson().toJson("Hello World"));
+    get("/hello", (req, res) -> new Gson().toJson(HelloWorld.say()));
   }
 }

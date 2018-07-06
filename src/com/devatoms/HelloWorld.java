@@ -1,7 +1,7 @@
 package com.devatoms;
 
 public class HelloWorld {
-  public static String say() {
-    return "Hello World!";
+  public static Message say() {
+    return new Message("Hello World!");
   }
 }
