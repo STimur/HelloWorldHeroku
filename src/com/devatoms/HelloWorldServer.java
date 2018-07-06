@@ -1,5 +1,7 @@
 package com.devatoms;
 
+import com.google.gson.Gson;
+
 import static spark.Spark.get;
 import static spark.Spark.setPort;
 
@@ -16,6 +18,6 @@ public class HelloWorldServer {
     }
     setPort(port);
 
-    get("/hello", (req, res) -> "Hello World");
+    get("/hello", (req, res) -> new Gson().toJson("Hello World"));
   }
 }
