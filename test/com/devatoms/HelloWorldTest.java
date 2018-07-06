@@ -8,6 +8,6 @@ import static org.hamcrest.CoreMatchers.is;
 public class HelloWorldTest {
   @Test
   public void say() {
-    Assert.assertThat(HelloWorld.say(), is(new Message("Tere Maailm!")));
+    Assert.assertThat(HelloWorld.say(), is(new Message("Bonjour le monde!")));
   }
 }
