@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+sourceSets {
+    main {
+        java { srcDir "src" }
+    }
+
+    test {
+        java { srcDir "test" }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.sparkjava:spark-core:2.7.2'
+    testCompile 'junit:junit:4.12'
+}
